@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Discroll.DiscrollActivity">
+
+    <com.flavienlaurent.discrollview.lib.DiscrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:discrollve="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.flavienlaurent.discrollview.lib.DiscrollViewContent
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:background="@android:color/white"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:padding="25dp"
+                android:text="Do you love cheese?"
+                android:textColor="@android:color/black"
+                android:textSize="72sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#007788"
+                discrollve:discrollve_alpha="true"
+                discrollve:discrollve_scaleX="true"
+                discrollve:discrollve_scaleY="true"
+                discrollve:discrollve_threshold="0.3"
+                tools:ignore="MissingPrefix" />
+
+
+            <ImageView
+                android:layout_width="400dp"
+                android:layout_height="200dp"
+                android:src="@drawable/discroller"
+                discrollve:discrollve_alpha="true"
+                discrollve:discrollve_scaleX="true"
+                discrollve:discrollve_scaleY="true"
+                discrollve:discrollve_translation="fromLeft|fromBottom"
+                tools:ignore="MissingPrefix" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                tools:ignore="MissingPrefix" />
+
+            <ImageView
+                android:layout_width="220dp"
+                android:layout_height="110dp"
+                android:layout_gravity="right"
+                android:src="@drawable/discroller"
+                discrollve:discrollve_scaleX="true"
+                discrollve:discrollve_scaleY="true"
+                tools:ignore="MissingPrefix" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="When the cheese comes out everybody's happy pecorino red leicester"
+                android:textSize="18sp"
+                discrollve:discrollve_alpha="true"
+                discrollve:discrollve_translation="fromBottom"
+                tools:ignore="MissingPrefix" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:src="@drawable/discroller"
+                discrollve:discrollve_scaleX="true"
+                discrollve:discrollve_scaleY="true"
+                tools:ignore="MissingPrefix" />
+
+
+        </com.flavienlaurent.discrollview.lib.DiscrollViewContent>
+
+    </com.flavienlaurent.discrollview.lib.DiscrollView>
+
+</LinearLayout>

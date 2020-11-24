@@ -1,0 +1,69 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.2"
+
+    defaultConfig {
+        applicationId "com.coin.leranandroid"
+        minSdkVersion 16
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    //descroller
+    implementation 'com.github.flavienlaurent.discrollview:library:0.0.2'
+
+    //lotter animation
+    implementation "com.airbnb.android:lottie:3.4.1"
+
+    //read more
+    compile 'com.borjabravo:readmoretextview:2.1.0'
+
+    //stepper Touch
+    implementation 'com.github.DanielMartinus:Stepper-Touch:0.6'
+
+    //swipe card
+    implementation 'com.lorentzos.swipecards:library:1.0.9'
+
+    //Explosion Img
+    compile 'tyrantgit:explosionfield:1.0.1'
+
+    //shine button
+    compile 'com.sackcentury:shinebutton:1.0.0'
+
+    //swipe selector
+    compile 'com.roughike:swipe-selector:1.0.6'
+
+    //inapp purchase
+    implementation 'com.android.billingclient:billing:3.0.1'
+    implementation 'com.anjlab.android.iab.v3:library:1.0.44'
+
+
+}
